@@ -8,23 +8,51 @@ header {
 
   h1 {
     margin: 0;
+    font-size: 1.5em;
+
+    @media (min-width: @screen-desktop) {
+      font-size: 2em;
+    }
   }
 
   h3 {
-    margin: 0;
-    text-align: right;
+    margin: -4px 0 0 0;
+    padding-bottom: 10px;
+    line-height: 0;
+    text-align: left;
+
+    @media (min-width: @screen-tablet) {
+      margin: 0;
+      padding-bottom: 0;
+      line-height: 1.375;
+      text-align: right;
+    }
 
     span {
-      display: block;
+      margin-right: -4px;
       line-height: 16px;
       font-size: 14px;
       font-weight: normal;
+      
+      @media (min-width: @screen-tablet) {
+        display: block;
+        margin-right: 0;
+      }
     }
   }
 
   .header-column {
-    width: 394px;
-    display: inline-block;
+    display: block;
+    width: 272px;
+
+    @media (min-width: @screen-tablet) {
+      display: inline-block;
+      width: 268px;
+    }
+
+    @media (min-width: @screen-desktop) {
+      width: 394px;
+    }
   }
 }
 

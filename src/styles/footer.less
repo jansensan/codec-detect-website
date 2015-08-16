@@ -9,11 +9,25 @@ footer {
   color: #eee;
 
   .footer-column {
-    width: 380px;
-    float: left;
+    width: 272px;
+
+    @media (min-width: @screen-tablet) {
+      width: 260px;
+      float: left;
+    }
+
+    @media (min-width: @screen-desktop) {
+      width: 380px;
+    }
 
     &.right-column {
-      margin-left: 32px;
+      @media (min-width: @screen-tablet) {
+        margin-left: 24px;
+      }
+
+      @media (min-width: @screen-desktop) {
+        margin-left: 32px;
+      }
     }
   }
 
