@@ -1,0 +1,85 @@
+#content {
+  color: #eee;
+  text-shadow: 0 -1px 0 #000;
+}
+
+.codec-group {
+  overflow: hidden;
+}
+
+.tagNotSupported {
+  display: none;
+  float: left;
+  width: 792px;
+  max-height: 100px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(220, 220, 220, 0.8);
+  background: #f78989;
+  background-image: url("../images/tile-gradient.png");
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  box-shadow: 0px 2px 2px #333;
+  text-shadow: 0 1px 0 rgba(220, 220, 220, 0.8);
+  color: #444;
+
+  a {
+    color: #444;
+  }
+}
+
+.codec-tile {
+  float: left;
+  width: 378px;
+  max-height: 100px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(220, 220, 220, 0.8);
+  background: #ccc;
+  background-image: url("../images/tile-gradient.png");
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+  box-shadow: 0px 2px 2px #333;
+  text-shadow: 0 1px 0 rgba(220, 220, 220, 0.8);
+
+  &.supported {
+    background-color: #98e052;
+  }
+
+  &.probably-supported {
+    background-color: #eec758;
+  }
+
+  &.unsupported {
+    background-color: #f78989;
+  }
+
+  .codec-tile-label {
+    text-align: center;
+    padding: 32px 0;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    color: #444;
+
+    &:hover {
+      color: #222;
+    }
+  }
+}
+
+// FIXME: unable to set the margin right so tiles arent stuck to each other
+.tile-left-column {
+  margin-right: 32px !important;
+}
+
+.video-overlay {
+  background-image: url("../images/video-overlay.png");
+}
+
+.audio-overlay {
+  background-image: url("../images/audio-overlay.png");
+}
