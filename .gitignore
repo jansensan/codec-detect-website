@@ -7,4 +7,5 @@
 # project specific files
 bower_components
 node_modules
+dist/index.html
 dist
