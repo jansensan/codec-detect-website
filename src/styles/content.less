@@ -46,6 +46,10 @@
   box-shadow: 0px 2px 2px #333;
   text-shadow: 0 1px 0 rgba(220, 220, 220, 0.8);
 
+  &.tile-left-column {
+    margin-right: 32px;
+  }
+
   &.supported {
     background-color: #98e052;
   }
@@ -77,9 +81,4 @@
       background-image: url("../images/audio-overlay.png");
     }
   }
-}
-
-// FIXME: unable to set the margin right so tiles arent stuck to each other
-.tile-left-column {
-  margin-right: 32px !important;
 }

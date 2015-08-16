@@ -15,10 +15,11 @@
       controllerAs: 'vm',
       bindToController: true,
       scope: {
-        media: '@',
+        additionalStyles: '@',
         codec: '@',
-        support: '=',
-        method: '='
+        media: '@',
+        method: '=',
+        support: '='
       },
       templateUrl: TemplatesPath.CODEC_TILE
     };
@@ -36,7 +37,7 @@
     // methods
     vm.getLabel = getLabel;
     vm.getMediaStyle = getMediaStyle;
-    vm.getSupportStyle = getSupportStyle;
+    vm.getStyles = getStyles;
     vm.isDetectingSupport = isDetectingSupport;
 
     // method definitions
@@ -122,6 +123,14 @@
           break;
       }
       return style;
+    }
+
+    function getStyles() {
+      var styles = [
+        getSupportStyle(),
+        vm.additionalStyles
+      ];
+      return styles.join(' ');
     }
   }
 
