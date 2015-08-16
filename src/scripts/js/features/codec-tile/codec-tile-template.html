@@ -1,13 +1,7 @@
-<div
-  class="codec-tile"
-  ng-class="vm.getSupportStyle()"
->
-
-  <!-- detection pending -->
-  <!-- TODO: show spinner -->
-  <div class="codec-tile-label" ng-if="vm.isDetectingSupport()">Detecting support…</div>
-
-  <!-- support display -->
-  <div class="codec-tile-label" ng-if="!vm.isDetectingSupport()">{{vm.getLabel()}}</div>
-
+<div class="codec-tile" ng-class="vm.getSupportStyle()">
+  <div class="codec-tile-label" ng-class="vm.getMediaStyle()">
+    <!-- TODO: show spinner -->
+    <span ng-if="vm.isDetectingSupport()">Detecting support…</span>
+    <span ng-if="!vm.isDetectingSupport()">{{vm.getLabel()}}</span>
+  </div>
 </div>
