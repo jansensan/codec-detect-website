@@ -1,0 +1,61 @@
+.greyButton {
+  display: inline-block;
+  padding: 14px 16px;
+  .roundedTile;
+}
+
+.send-details-inputs {
+  .roundedTile;
+  display: inline-block;
+  margin-right: 32px;
+  padding: 24px;
+}
+
+.details-input {
+  margin-right: 24px;
+  padding: 2px;
+  width: 172px;
+  color: @labelColor;
+
+  &.last {
+    margin-right: 0px;
+  }
+}
+
+.send-details-button {
+  .roundedTile;
+  .textShadow;
+  display: inline-block;
+  padding: 26px 48px;
+  background: @green;
+  text-align: center;
+  font-weight: bold;
+  color: @labelColor;
+  cursor: pointer;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.emailFollowUpTile {
+  .roundedTile;
+  .textShadow;
+  display: none;
+  opacity: 0;
+  padding: 24px 16px;
+  width: 760px;
+  font-weight: bold;
+  text-align: center;
+  color: @labelColor;
+}
+
+#sendDetailsConfirmation {
+  background: @green;
+  background-image: url("../images/tile-gradient.png");
+}
+
+#sendDetailsError {
+  background: @red;
+  background-image: url("../images/tile-gradient.png");
+}

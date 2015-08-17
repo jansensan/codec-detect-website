@@ -8,39 +8,28 @@
 }
 
 .tagNotSupported {
+  .roundedTile;
+  .textShadow;
   display: none;
   float: left;
+  margin-bottom: 32px;
   width: 792px;
   max-height: 100px;
-  margin-bottom: 32px;
-  border: 1px solid rgba(220, 220, 220, 0.8);
   background: #f78989;
-  background-image: url("../images/tile-gradient.png");
-
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-
-  box-shadow: 0px 2px 2px #333;
-  text-shadow: 0 1px 0 rgba(220, 220, 220, 0.8);
-  color: #444;
+  color: @labelColor;
 
   a {
-    color: #444;
+    color: @labelColor;
   }
 }
 
 .codec-tile {
+  .roundedTile;
+  .textShadow;
   float: left;
   width: 270px;
   max-height: 100px;
   margin-bottom: 20px;
-  background: #ccc;
-  background-image: url("../images/tile-gradient.png");
-  text-shadow: 0 1px 0 rgba(220, 220, 220, 0.8);
-  box-shadow: 0px 2px 2px #333;
-  border: 1px solid rgba(220, 220, 220, 0.8);
-  .roundedBorders;
 
   @media (min-width: @screen-tablet) {
     width: 258px;
@@ -63,15 +52,15 @@
   }
 
   &.supported {
-    background-color: #98e052;
+    background-color: @green;
   }
 
   &.probably-supported {
-    background-color: #D9CD57;
+    background-color: @yellow;
   }
 
   &.unsupported {
-    background-color: #f78989;
+    background-color: @red;
   }
 
   .codec-tile-label {
@@ -80,7 +69,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 0.84em;
-    color: #444;
+    color: @labelColor;
 
     @media (min-width: @screen-tablet) {
       font-size: 0.8em;
@@ -92,7 +81,7 @@
     }
 
     &:hover {
-      color: #222;
+      color: @labelHoverColor;
     }
 
     &.video-overlay {

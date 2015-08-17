@@ -15,7 +15,8 @@
       CODEC_TILE: featuresPath.concat('codec-tile/codec-tile-template.html'),
       METHOD_SELECTION: featuresPath.concat('method-selection/method-selection-template.html'),
       AUDIO_CODEC_SUPPORT: featuresPath.concat('audio-codec-support/audio-codec-support-template.html'),
-      VIDEO_CODEC_SUPPORT: featuresPath.concat('video-codec-support/video-codec-support-template.html')
+      VIDEO_CODEC_SUPPORT: featuresPath.concat('video-codec-support/video-codec-support-template.html'),
+      SEND_INFO_FORM: featuresPath.concat('send-info-form/send-info-form-template.html')
     };
   }
 
