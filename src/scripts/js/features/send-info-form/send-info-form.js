@@ -19,14 +19,17 @@
     };
   }
 
-  function SendInfoFormController() {
+  /* @ngInject */
+  function SendInfoFormController(sendInfoFormModel) {
     // public api
     var vm = this;
+    vm.formModel = sendInfoFormModel;
   }
 
   function getDependencies() {
     return [
       'com.codecdetect.constants.TemplatesPaths',
+      'com.codecdetect.features.SendInfoFormModel',
       'com.codecdetect.Templates'
     ]
   }

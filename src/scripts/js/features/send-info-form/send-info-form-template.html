@@ -1,6 +1,6 @@
 <section id="videoCodecSupport">
   <h2>Send Codec Info</h2>
-  <form name="sendDetailsForm">
+  <form name="sendDetailsForm" ng-submit="vm.formModel.sendInfo()">
     <div class="send-details-inputs">
       <input 
         class="details-input"
@@ -8,6 +8,7 @@
         name="yourName"
         type="text"
         placeholder="Your name"
+        ng-model="vm.formModel.name"
       />
       <input 
         class="details-input"
@@ -15,6 +16,7 @@
         name="yourEmail"
         type="text"
         placeholder="Your email"
+        ng-model="vm.formModel.email"
       />
       <input 
         class="details-input last"
@@ -22,6 +24,7 @@
         name="recipientsEmail"
         type="email"
         placeholder="Recipient's email"
+        ng-model="vm.formModel.recipientEmail"
       />
     </div>
     <button
