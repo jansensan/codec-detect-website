@@ -14,6 +14,7 @@
       controller: 'SendInfoFormController',
       controllerAs: 'vm',
       bindToController: true,
+      scope: {},
       templateUrl: TemplatesPath.SEND_INFO_FORM
     };
   }

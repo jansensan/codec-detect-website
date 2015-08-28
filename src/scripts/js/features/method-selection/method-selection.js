@@ -14,6 +14,7 @@
       controller: 'MethodSelectionController',
       controllerAs: 'vm',
       bindToController: true,
+      scope: {},
       templateUrl: TemplatesPath.METHOD_SELECTION
     };
   }
