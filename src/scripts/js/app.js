@@ -28,6 +28,7 @@
       'com.codecdetect.features.VideoCodecSupport',
       'com.codecdetect.features.AudioCodecSupport',
       'com.codecdetect.features.MethodSelection',
+      'com.codecdetect.features.SendInfoForm',
       'com.codecdetect.Templates'
     ];
   }
