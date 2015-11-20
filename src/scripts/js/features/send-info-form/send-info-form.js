@@ -30,10 +30,8 @@
 
     // methods definitions
     function sendInfo() {
-      console.info('%c--- SendInfoFormController.sendInfo ---', 'color: #0000CC');
       sendDetailsForm.$submitted = true;
-
-      // sendInfoFormModel.sendInfo();
+      sendInfoFormModel.send();
     }
   }
 
