@@ -16,7 +16,7 @@
 
     // methods definitions
     function send(data) {
-      var url = 'http://codecdetect.com/assets/php/email-details.php';
+      var url = 'http://codecdetect.com/scripts/php/email-details.php';
 
       return $http.post(url, data);
     }
