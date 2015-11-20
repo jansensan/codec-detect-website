@@ -36,6 +36,11 @@
   &:hover {
     color: #000;
   }
+
+  &:disabled {
+    background: @dimmedGreen;
+    color: @dimmedLabel;
+  }
 }
 
 .emailFollowUpTile {
@@ -47,6 +52,14 @@
   width: 760px;
   font-weight: bold;
   text-align: center;
+  color: @labelColor;
+}
+
+.send-details-form-errors {
+  .roundedTile;
+  .textShadow;
+  padding: 24px;
+  background-color: @red;
   color: @labelColor;
 }
 

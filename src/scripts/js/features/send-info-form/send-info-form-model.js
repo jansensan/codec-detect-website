@@ -3,7 +3,9 @@
   'use strict';
 
   angular
-    .module('com.codecdetect.features.SendInfoFormModel', [])
+    .module('com.codecdetect.features.SendInfoFormModel', [
+      'ngMessages'
+    ])
     .factory('sendInfoFormModel', SendInfoFormModel);
 
   function SendInfoFormModel() {
