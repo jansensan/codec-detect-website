@@ -1,11 +1,13 @@
 # CodecDetect website
 
-Sources for [codecdetect.com](http://codecdetect.com/).
+Sources for [codecdetect.com website](http://codecdetect.com/).
+
+If you are looking for the sources for the CodecDetect JavaScript library, see [this Github repository](https://github.com/jansensan/codec-detect-website/issues).
 
 
-## Privacy
+## Known Issues
 
-This service does not collect nominal information about you or your browser, only anonymous statistical browser capability information cumulated into Google Analytics.
+See [Github issues list](https://github.com/jansensan/codec-detect-website/issues).
 
 
 ## Inspiration

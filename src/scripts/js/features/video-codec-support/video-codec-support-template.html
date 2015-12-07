@@ -1,0 +1,35 @@
+<section id="videoCodecSupport" class="codec-group">
+
+  <h2>Video Codecs</h2>
+
+  <codec-tile
+    additional-styles="tile-left-column"
+    codec="MPEG4"
+    support="vm.supportModel.isMPEG4VideoSupported()"
+    method="vm.supportModel.method"
+    media="video"
+  ></codec-tile>
+
+  <codec-tile
+    codec="H264"
+    support="vm.supportModel.isH264VideoSupported()"
+    method="vm.supportModel.method"
+    media="video"
+  ></codec-tile>
+
+  <codec-tile
+    additional-styles="tile-left-column"
+    codec="OGG"
+    support="vm.supportModel.isOGGVideoSupported()"
+    method="vm.supportModel.method"
+    media="video"
+  ></codec-tile>
+
+  <codec-tile
+    codec="WEBM"
+    support="vm.supportModel.isWEBMVideoSupported()"
+    method="vm.supportModel.method"
+    media="video"
+  ></codec-tile>
+
+</section>

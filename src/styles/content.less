@@ -1,0 +1,120 @@
+#content {
+  color: #eee;
+  text-shadow: 0 -1px 0 #000;
+}
+
+.codec-group {
+  overflow: hidden;
+}
+
+.tagNotSupported {
+  .roundedTile;
+  .textShadow;
+  display: none;
+  float: left;
+  margin-bottom: 32px;
+  width: 792px;
+  max-height: 100px;
+  background: #f78989;
+  color: @labelColor;
+
+  a {
+    color: @labelColor;
+  }
+}
+
+.codec-tile {
+  .roundedTile;
+  .textShadow;
+  float: left;
+  width: 270px;
+  max-height: 100px;
+  margin-bottom: 20px;
+
+  @media (min-width: @screen-tablet) {
+    width: 258px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @screen-desktop) {
+    width: 378px;
+    margin-bottom: 32px;
+  }
+
+  &.tile-left-column {
+    @media (min-width: @screen-tablet) {
+      margin-right: 24px;
+    }
+
+    @media (min-width: @screen-desktop) {
+      margin-right: 32px;
+    }
+  }
+
+  &.supported {
+    background-color: @green;
+  }
+
+  &.probably-supported {
+    background-color: @yellow;
+  }
+
+  &.unsupported {
+    background-color: @red;
+  }
+
+  .codec-tile-label {
+    padding: 24px 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.84em;
+    color: @labelColor;
+
+    @media (min-width: @screen-tablet) {
+      font-size: 0.8em;
+    }
+
+    @media (min-width: @screen-desktop) {
+      font-size: 1em;
+      padding: 32px 0;
+    }
+
+    &:hover {
+      color: @labelHoverColor;
+    }
+
+    &.video-overlay {
+      background-image: url("../images/video-overlay.png");
+    }
+
+    &.audio-overlay {
+      background-image: url("../images/audio-overlay.png");
+    }
+  }
+}
+
+
+#methodSelection {
+  code {
+    color: @dimmedYellow;
+  }
+
+  label {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  select {
+    display: inline-block;
+    margin-top: 8px;
+    width: 272px;
+    font-size: 14px;
+    color: #141414;
+
+    @media (min-width: @screen-tablet) {
+      width: 160px;
+      margin-top: 0;
+    }
+  }
+}

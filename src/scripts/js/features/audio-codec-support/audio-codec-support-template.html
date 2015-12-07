@@ -1,0 +1,50 @@
+<section id="audioCodecSupport" class="codec-group">
+
+  <h2>Audio Codecs</h2>
+
+  <codec-tile
+    additional-styles="tile-left-column"
+    codec="MP3"
+    support="vm.supportModel.isMP3AudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+  <codec-tile
+    codec="AAC"
+    support="vm.supportModel.isAACAudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+  <codec-tile
+    additional-styles="tile-left-column"
+    codec="WEBM"
+    support="vm.supportModel.isWEBMAudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+  <codec-tile
+    codec="OGG (Vorbis)"
+    support="vm.supportModel.isOGGVorbisAudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+  <codec-tile
+    additional-styles="tile-left-column"
+    codec="OGG (Opus)"
+    support="vm.supportModel.isOGGOpusAudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+  <codec-tile
+    codec="Wave"
+    support="vm.supportModel.isWaveAudioSupported()"
+    method="vm.supportModel.method"
+    media="audio"
+  ></codec-tile>
+
+</section>
