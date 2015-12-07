@@ -1,5 +1,5 @@
 // include gulp and plugins
-var config = require('./lib/gulp-config')(),
+var config = require('./gulp-config')(),
   gulp = require('gulp'),
   glp = require('gulp-load-plugins')({lazy: true}),
   requireDir = require('require-dir'),
@@ -9,7 +9,7 @@ var config = require('./lib/gulp-config')(),
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // require tasks directory
-requireDir('./lib/tasks', {recurse: true});
+requireDir('./tasks', {recurse: true});
 
 // tasks
 gulp.task('help', glp.taskListing);

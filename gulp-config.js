@@ -1,4 +1,4 @@
-var bowerJson = require('../bower.json'),
+var bowerJson = require('./bower.json'),
   wiredep = require('wiredep'),
   _ = require('lodash');
 
