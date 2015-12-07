@@ -1,9 +1,8 @@
 {
   "name": "codec-detect-website",
   "description": "The website sources for the CodecDetect JavaScript utility.",
-  "version": "2.0.0",
   "authors": [
-    "Mat Janson Blanchet <mat.jb@jansensan.net>"
+    "Mat Janson Blanchet <mat.jb@jansensan.net> (http://jansensan.net)"
   ],
   "homepage": "http://codecdetect.com",
   "dependencies": {
@@ -23,5 +22,15 @@
     "lib",
     "node_modules",
     "resources"
+  ],
+  "keywords": [
+    "audio",
+    "codec detect",
+    "codec detection",
+    "codec",
+    "codecs",
+    "html5",
+    "media",
+    "video"
   ]
 }

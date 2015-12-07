@@ -1,8 +1,10 @@
 {
   "name": "codec-detect-website",
-  "description": "The website sources for the CodecDetec JS utility.",
+  "description": "The website sources for the CodecDetect JavaScript utility.",
   "version": "2.0.0",
-  "author": "Mat Janson Blanchet <mat.jb@jansensan.net> (http://jansensan.net)",
+  "authors": [
+    "Mat Janson Blanchet <mat.jb@jansensan.net> (http://jansensan.net)"
+  ],
   "homepage": "http://codecdetect.com",
   "devDependencies": {
     "del": "^1.2.0",
