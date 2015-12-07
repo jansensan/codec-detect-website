@@ -2,7 +2,7 @@
 
 Sources for [codecdetect.com website](http://codecdetect.com/).
 
-If you are looking for the sources for the CodecDetect JavaScript library, see [this Github repository](https://github.com/jansensan/codec-detect-website/issues).
+If you are looking for the sources for the CodecDetect JavaScript library, see [this Github repository](https://github.com/jansensan/codec-detect).
 
 
 ## Known Issues
