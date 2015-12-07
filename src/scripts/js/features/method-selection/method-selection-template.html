@@ -1,7 +1,7 @@
 <section id="methodSelection">
   <h2>Detection Method</h2>
   <p>When polling for codec support, there are browsers that may return values such as <code>"maybe"</code> and <code>"probably"</code>, rather than a logical <code>"true"</code> or <code>"false"</code>.</p>
-  <p ng-if="vm.supportModel.method === 'exact'">By default, CodecDetect will use "exact" as a detection method. When obtaining values such as <code>"maybe"</code> and <code>"probably"</code>, CodecDetect will not intervene and simply report those values as they are.</p>
+  <p ng-if="vm.supportModel.method === 'exact'">By default, CodecDetect will use <code>"exact"</code> as a detection method. When obtaining values such as <code>"maybe"</code> and <code>"probably"</code>, CodecDetect will not intervene and simply report those values as they are.</p>
   <p ng-if="vm.supportModel.method === 'optimistic'">When set to an <code>"optimistic"</code> method, CodecDetect will transform any detection that was not reported as <code>"false"</code> or as an empty string (which means that a codec is not supported), and report a codec as supported.</p>
   <p ng-if="vm.supportModel.method === 'pessimistic'">When set to a <code>"pessimistic"</code> method, CodecDetect will report as unsupported any codec that is not specifically reported as supported.</p>
   <form name="methodSelectionForm">
