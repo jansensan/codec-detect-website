@@ -1,5 +1,7 @@
 # CodecDetect website
 
+[![Project Status: Inactive - The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](http://www.repostatus.org/badges/latest/inactive.svg)](http://www.repostatus.org/#inactive)
+
 Sources for [codecdetect.com website](http://codecdetect.com/).
 
 If you are looking for the sources for the CodecDetect JavaScript library, see [this Github repository](https://github.com/jansensan/codec-detect).
